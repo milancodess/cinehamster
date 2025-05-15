@@ -1,0 +1,20 @@
+{
+  "name": "cinehamster",
+  "version": "1.0.0",
+  "description": "CineHamster is a free movies website where you can watch movies and series for free.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan Bhandari",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.21.2",
+    "path":"^0.12.7"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
