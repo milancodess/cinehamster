@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CineHamster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ff9f1c;
+            --secondary-color: #2ec4b6;
+            --dark-color: #0a0a0a;
+            --light-color: #f8f9fa;
+            --gray-color: #6c757d;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .privacy-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .privacy-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .privacy-content {
+            margin-top: 30px;
+        }
+        
+        .privacy-section {
+            margin-bottom: 30px;
+        }
+        
+        .privacy-section h2 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .privacy-section p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .privacy-section ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .privacy-section li {
+            margin-bottom: 8px;
+        }
+        
+        .developer-note {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(46, 196, 182, 0.1);
+            border-radius: 8px;
+        }
+        
+        .developer-note p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: var(--light-color);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: #111;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            color: var(--gray-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .privacy-container {
+                padding: 20px;
+            }
+        }
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--light-color);
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--dark-color);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                transition: left 0.3s;
+                z-index: 99;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links a {
+                padding: 15px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index" class="logo">Cine<span>Hamster</span></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index"><i class="fas fa-home"></i> Home</a>
+                <a href="about"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="privacy" class="active"><i class="fas fa-shield-alt"></i> Privacy</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="privacy-container">
+            <h1 class="privacy-title">Privacy Policy</h1>
+            
+            <div class="privacy-content">
+                <div class="privacy-section">
+                    <p>Last Updated: May 2025</p>
+                    <p>CineHamster is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by CineHamster.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>Information We Collect</h2>
+                    <p>We may collect information about you in a variety of ways:</p>
+                    <ul>
+                        <li><strong>Usage Data:</strong> We may collect information about how you access and use our website.</li>
+                        <li><strong>Device Information:</strong> We may collect information about the device you use to access our service.</li>
+                        <li><strong>Cookies:</strong> We use cookies to enhance your experience on our website.</li>
+                    </ul>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>How We Use Your Information</h2>
+                    <p>We use the information we collect for various purposes:</p>
+                    <ul>
+                        <li>To provide and maintain our service</li>
+                        <li>To improve user experience</li>
+                        <li>To analyze how our website is used</li>
+                        <li>To detect and prevent technical issues</li>
+                    </ul>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>Third-Party Services</h2>
+                    <p>We may employ third-party companies and individuals to facilitate our service. These third parties have access to your information only to perform specific tasks on our behalf.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>Changes to This Privacy Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index">Home</a>
+                <a href="about">About</a>
+                <a href="contact">Contact</a>
+                <a href="privacy">Privacy</a>
+            </div>
+            <p class="copyright">© 2025 CineHamster. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
