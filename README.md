@@ -1,7 +1,7 @@
 
 # 🎬 CineHamster - Movie Streaming Platform
 
-![CineHamster Banner](https://i.ibb.co/DxLVqDv/Screenshot-2025-05-16-003236.png)
+![CineHamster Banner](https://i.postimg.cc/brjjvpQm/Screenshot-2025-05-16-003236.png)
 
 A modern movie streaming platform with secure POST API endpoints for searching and fetching movie details.
 
