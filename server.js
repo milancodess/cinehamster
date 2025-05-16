@@ -119,9 +119,15 @@ app.post('/api/movie', async (req, res) => {
       if (src) servers.push(src);
     });
 
-    let description = $('.desc .f-desc').text().trim();
-    description = description.replace(/You can view it for free on Soap2day\.?/i, '').trim();
-
+    let description = $('div[itemprop="description"] .f-desc').text().trim();
+    
+    const lastPeriodIndex = description.lastIndexOf('. ');
+    if (lastPeriodIndex !== -1) {
+      description = description.substring(0, lastPeriodIndex + 1);
+    }
+    
+    description = description.replace(/(.*)\..*$/, '$1.').trim();
+    
     res.json({ title, poster, rating, servers, description });
   } catch (error) {
     res.status(500).json({ error: 'Failed to scrape data', details: error.message });
