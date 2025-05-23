@@ -107,7 +107,7 @@ app.post('/api/movie', async (req, res) => {
     const { data } = await axios.get(url);
     const $ = cheerio.load(data);
 
-    const title = $('#bread li.active span').text().trim().replace('Text from here: ', '');
+    const title = $('#bread li.active span').text().trim().replace('OK', '');
     const poster = $('.thumb.mvi-cover').css('background-image')
       .replace(/^url["']?/, '')
       .replace(/["']?$/, '');
