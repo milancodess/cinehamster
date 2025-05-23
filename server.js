@@ -30,7 +30,7 @@ app.get("/privacy", (req, res) => {
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "contact.html"));
 });
-
+  
 async function scrapeSearchResults(query) {
   const url = `https://ww25.soap2day.day/search/${encodeURIComponent(query)}`;
   try {
