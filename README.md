@@ -28,15 +28,18 @@ A modern movie streaming platform with secure POST API endpoints for searching a
 
 ## 🚀 Installation & Setup
 
-```bash
 # Clone repository
-git clone https://github.com/yourusername/cinehamster.git
-cd cinehamster/backend
+```bash
+git clone https://github.com/milancodess/cinehamster.git
+```
 
 # Install dependencies
+```bash
 npm install
+```
 
 # Start development server
+```bash
 node server.js
 ```
 
